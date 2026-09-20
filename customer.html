@@ -23,11 +23,17 @@ img{display:block;max-width:100%}
 @keyframes brand-copy-in{to{opacity:1;transform:translateY(0)}}
 .brand-scroll{position:absolute;z-index:2;bottom:26px;color:#596067;font-size:10px;font-weight:900;letter-spacing:.26em}
 .hero{min-height:100svh;display:flex;align-items:flex-end;padding:140px 24px 82px;color:#fff;background-position:center;background-size:cover}
-.hero-beer,.hero-cocktail,.hero-show{position:relative}
+.hero-beer,.hero-cocktail,.hero-show,.hero-custom{position:relative}
 .hero-beer{background-image:linear-gradient(90deg,#050607f2 0%,#111317c9 48%,#11131755 76%,transparent),url('網頁用圖/EKKO_生啤熱情主視覺_無價格.png')}
 .hero-cocktail{background-image:linear-gradient(90deg,#050607f2 0%,#111317c9 48%,#11131755 76%,transparent),url('網頁用圖/EKKO_解憂客棧_HAPPY-BIRTHDAY_試管酒_桌機.png')}
 .hero-show{background-image:linear-gradient(90deg,#050607f2 0%,#111317c9 48%,#11131755 76%,transparent),url('網頁用圖/EKKO_駐唱歌手_DJ_融合主視覺_桌機.png')}
+.hero-custom{background-image:linear-gradient(90deg,#050607f2 0%,#111317c9 48%,#11131755 76%,transparent),url('網頁用圖/服務_泳池派對.png')}
 .hero-inner,.inner{width:min(1120px,100%);min-width:0;margin:auto}
+.beer-partner{display:flex;align-items:center;gap:12px;width:max-content;max-width:100%;margin:0 0 18px}
+.hero-beer .beer-partner{margin:18px 0 0}
+.beer-partner .partner-ekko{width:82px;height:auto;filter:invert(1) brightness(1.2)}
+.beer-partner .partner-x{color:#fff;font-size:21px;font-weight:300;line-height:1}
+.beer-partner .partner-kirin{width:112px;height:34px;object-fit:cover;object-position:center}
 .tag{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:.2em}
 .hero h1{max-width:900px;margin:12px 0 16px;font-size:72px;line-height:.96;letter-spacing:-.06em}
 .hero .hero-subtitle{max-width:min(900px,100%);overflow-wrap:anywhere;margin:0 0 22px;color:#fff;font-size:26px;font-weight:800;line-height:1.45;letter-spacing:.02em}
@@ -65,13 +71,19 @@ section{padding:96px 24px}
 .logo{width:106px}
 .hero{min-height:100svh;padding:120px 18px 58px}
 .hero-inner{width:100%;max-width:100%;min-width:0}
-.hero-beer,.hero-cocktail,.hero-show{padding-bottom:150px}
+.hero-beer,.hero-cocktail,.hero-show,.hero-custom{padding-bottom:150px}
 .hero-beer{background-position:64% center}
 .hero-cocktail{background-image:linear-gradient(180deg,#0506075c 0%,#07090ba8 38%,#07090be8 72%,#050607f5 100%),url('網頁用圖/EKKO_解憂客棧_HAPPY-BIRTHDAY_試管酒_手機.png');background-position:center}
 .hero-show{background-image:linear-gradient(180deg,#0506074a 0%,#07090b91 38%,#07090be8 72%,#050607f5 100%),url('網頁用圖/EKKO_駐唱歌手_DJ_融合主視覺_手機.png');background-position:center}
+.hero-custom{background-image:linear-gradient(180deg,#0506074a 0%,#07090b91 38%,#07090be8 72%,#050607f5 100%),url('網頁用圖/服務_泳池派對.png');background-position:center}
 .hero .hero-subtitle{width:100%;max-width:100%;white-space:normal;word-break:break-all;overflow-wrap:anywhere}
 .hero .hero-notice{left:18px;right:18px;bottom:18px;width:auto;max-width:none;white-space:normal;word-break:break-all;overflow-wrap:anywhere}
 .hero .hero-subtitle{font-size:20px}
+.beer-partner{gap:9px;margin-bottom:14px}
+.hero-beer .beer-partner{margin-top:16px}
+.beer-partner .partner-ekko{width:70px}
+.beer-partner .partner-x{font-size:18px}
+.beer-partner .partner-kirin{width:96px;height:30px}
 .beer-flavor-cards{flex-wrap:nowrap;gap:6px;margin-top:14px}
 .beer-flavor-card{flex:1;min-width:0;padding:8px 6px;font-size:12px}
 .occasion-cards{gap:6px;margin-top:14px}
@@ -87,11 +99,12 @@ section{padding:72px 17px}
 .nav-actions{gap:8px}.back{padding:8px 9px;white-space:nowrap}.contact{white-space:nowrap}
 @media(max-width:760px){.nav{height:112px;display:grid;grid-template-columns:1fr auto;grid-template-rows:64px 48px;padding:0 16px}.nav>a:first-child{grid-column:1;grid-row:1}.nav-actions{grid-column:1/-1;grid-row:2;align-self:stretch;overflow-x:auto;gap:4px;padding:4px 0 8px;font-size:12px;scrollbar-width:none}.nav-actions::-webkit-scrollbar{display:none}.back{padding:7px 10px}.contact{position:absolute;top:21px;right:16px}}
 </style></head><body>
-<nav class="nav"><a href="index.html"><img class="logo" src="商標/logo-transparent.png" alt="EKKO"></a><div class="nav-actions"><a class="back" href="#party">現拉生啤</a><a class="back" href="#cocktail">派對調酒</a><a class="back" href="#show">現場演出</a><a class="contact" href="#contact">詢問報價與檔期</a></div></nav>
+<nav class="nav"><a href="index.html"><img class="logo" src="商標/logo-transparent.png" alt="EKKO"></a><div class="nav-actions"><a class="back" href="#party">現拉生啤</a><a class="back" href="#cocktail">派對調酒</a><a class="back" href="#show">現場演出</a><a class="back" href="#custom">客製活動</a><a class="contact" href="#contact">詢問報價與檔期</a></div></nav>
 <header class="brand-hero"><div class="brand-stage"><div class="brand-logo-frame"><img src="商標/logo-transparent.png" alt="EKKO — Echoes Better Together"></div><div class="brand-kicker">BETTER TOGETHER</div><p>生啤、調酒與派對服務</p></div><a class="brand-scroll" href="#party">SCROLL</a></header>
-<header class="hero hero-beer" id="party" role="img" aria-label="三杯金黃生啤碰杯、泡沫飛濺的乾杯畫面"><div class="hero-inner"><span class="tag">01 / FRESH BEER</span><h1>現拉生啤</h1><p class="hero-subtitle">小型瞬冷式即飲生啤機・三種酒款任君挑選・歡快暢飲現在開始</p><div class="beer-flavor-cards" aria-label="三種酒款"><span class="beer-flavor-card">一番搾</span><span class="beer-flavor-card">豐潤 496</span><span class="beer-flavor-card">金色三麥</span></div><p class="hero-notice">注意事項｜必須提前兩個禮拜預訂・需要支付押金・現場須提供電源・須提前確認置放空間是否足夠</p></div></header>
+<header class="hero hero-beer" id="party" role="img" aria-label="三杯金黃生啤碰杯、泡沫飛濺的乾杯畫面"><div class="hero-inner"><span class="tag">01 / FRESH BEER</span><h1>現拉生啤</h1><p class="hero-subtitle">小型瞬冷式即飲生啤機・三種酒款任君挑選・歡快暢飲現在開始</p><div class="beer-flavor-cards" aria-label="三種酒款"><span class="beer-flavor-card">一番搾</span><span class="beer-flavor-card">豐潤 496</span><span class="beer-flavor-card">金色三麥</span></div><div class="beer-partner" aria-label="EKKO 與 KIRIN 麒麟啤酒合作"><img class="partner-ekko" src="商標/logo-transparent.png" alt="EKKO"><span class="partner-x" aria-hidden="true">×</span><img class="partner-kirin" src="商標/kirin-logo.png" alt="KIRIN 麒麟啤酒"></div><p class="hero-notice">注意事項｜必須提前兩個禮拜預訂・需要支付押金・現場須提供電源・須提前確認置放空間是否足夠</p></div></header>
 <section class="hero hero-cocktail" id="cocktail"><div class="hero-inner"><span class="tag">02 / COCKTAIL</span><h1>派對調酒</h1><p class="hero-subtitle">EKKO 與知名酒吧聯名合作<br>從酒單設計到視覺呈現<br>為您的聚會創造美好回憶</p><div class="occasion-cards" aria-label="適合活動類型"><span class="occasion-card">生日派對</span><span class="occasion-card">求婚派對</span><span class="occasion-card">性別派對</span><span class="occasion-card">公司聚餐</span><span class="occasion-card">商業活動</span><span class="occasion-card">軟性飲料</span></div><p class="hero-notice">注意事項｜必須提前兩個禮拜預訂・服務範圍為宜蘭地區・依活動人數與場地個別報價</p></div></section>
 <section class="hero hero-show" id="show"><div class="hero-inner"><span class="tag">03 / LIVE SHOW</span><h1>現場演出</h1><p class="hero-subtitle">EKKO 有長期合作的表演夥伴<br>可依照聚會內容彈性安排<br>想增加氣氛、創造回憶，就交給 EKKO</p><p class="hero-notice">注意事項｜須提前確認日期與檔期・依活動規模、場地條件與演出內容個別報價</p></div></section>
+<section class="hero hero-custom" id="custom"><div class="hero-inner"><span class="tag">04 / CUSTOM EVENT</span><h1>你有想法，<br>我來實現</h1><p class="hero-subtitle">無論你想辦什麼主題活動，場地以及內容規劃都交給 EKKO 來實現。<br>省去與廠商之間繁瑣的溝通流程，讓 EKKO 幫助你完成心目中最完美的回憶。</p><p class="hero-notice">注意事項｜請提前提供活動日期、場地與初步想法；實際內容將依需求、場地條件與檔期確認。</p></div></section>
 <main>
 <section class="steps"><div class="inner"><div class="section-head"><span class="tag">HOW IT WORKS</span><h2>四步驟，完成聚會預訂。</h2></div><div class="step-grid"><article class="step"><b>STEP 01</b><h3>私訊提供活動資訊</h3><p>告訴我們日期、地點、預計人數，以及想詢問的服務。</p></article><article class="step"><b>STEP 02</b><h3>確認服務資格</h3><p>生啤將確認入住民宿是否已設置設備；調酒與活動服務則確認場地條件及可預約檔期。</p></article><article class="step"><b>STEP 03</b><h3>確認內容與報價</h3><p>我們會依人數、場地與需求，提供適合的服務內容及個別報價。</p></article><article class="step"><b>STEP 04</b><h3>完成預訂</h3><p>雙方確認方案、日期與預訂細節後，再安排酒品配送或現場服務。</p></article></div></div></section>
 
